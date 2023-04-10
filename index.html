@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+<tr>
+<td>
+<form onsubmit="event.preventDefault();onFormSubmit();" id="booknames">
+<div> 
+<label>Book id</label>
+<input type="number" name="bookId" id="bookid">
+</div>
+<div> 
+<label>Book type</label>
+<input type="text" name="bookType" id="booktype">
+</div>
+<div> 
+<label>Book title</label>
+<input type="text" name="bookTitle" id="booktitle">
+</div>
+<div> 
+<label>Page-count</label>
+<input type="number" name="pageCount" id="pagecount">
+</div>
+<div> 
+<label>Copyright</label>
+<input type="number" name="copyright" id="copyright">
+</div>
+<div class="form-action-buttons">
+<input type="submit" value="submit">
+</div>
+</form> 
+</td>
+<td>
+<table class="list" id="table">
+<thead>
+<tr>
+<th>Book id</th>
+<th>Book type</th>
+<th>Book title</th>
+<th>Page-count</th>
+<th>Copyright</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<script src="books.js"></script>
+<script src="details.js"></script>
+</body>
+</html>
