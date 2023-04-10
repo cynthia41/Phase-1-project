@@ -28,7 +28,9 @@ function readFormData(){
          
     }
 const table = document.querySelector('#table');
-
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+   });
 
 const form = document.querySelector('#booknames');
 form.addEventListener("submit", (event) => {
